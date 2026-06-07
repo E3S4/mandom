@@ -13,7 +13,15 @@
   "dependencies": {
     "active-win": "^8.2.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/E3S4/mandom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/E3S4/mandom/issues"
+  },
+  "homepage": "https://github.com/E3S4/mandom#readme",
   "devDependencies": {
-    "electron": "^42.3.3"
+    "electron": "^38.8.6"
   }
 }

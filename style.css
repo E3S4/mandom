@@ -1,0 +1,76 @@
+body{
+    margin:0;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#0f1117;
+
+    font-family:Segoe UI;
+}
+
+.container{
+    width:700px;
+}
+
+h1{
+    color:white;
+    text-align:center;
+    font-size:4rem;
+}
+
+.card,
+.task-card{
+
+    backdrop-filter:blur(20px);
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:20px;
+
+    padding:20px;
+
+    margin-top:20px;
+}
+
+input{
+
+    width:70%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:1rem;
+}
+
+button{
+
+    padding:15px 25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+}
+
+.task-card{
+
+    text-align:center;
+}
+
+#currentTask{
+
+    color:white;
+
+    font-size:2rem;
+}
