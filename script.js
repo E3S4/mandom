@@ -1,36 +1,20 @@
-const taskInput = document.getElementById("taskInput");
-const startBtn = document.getElementById("startBtn");
-const currentTask = document.getElementById("currentTask");
+const { app, BrowserWindow } = require("electron");
+const path = require("path");
 
-let currentActivity = "";
-let seconds = 0;
-let timer = null;
-    startBtn.addEventListener("click", () => {
-    currentActivity = taskInput.value;
-    if (currentActivity === "") {
-        return;
-    }
-    taskInput.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-        startBtn.click();
-    }
-});
-    currentTask.textContent = currentActivity;
-    taskInput.value = "";
-    seconds = 0;
-    clearInterval(timer);
-    timer = setInterval(() => {
-        seconds++;
-        const hrs = String(Math.floor(seconds / 3600)).padStart(2, "0");
-        const mins = String(
-            Math.floor((seconds % 3600) / 60)
-        ).padStart(2, "0");
-        const secs = String(
-            seconds % 60
-        ).padStart(2, "0");
-        currentTask.textContent =
-        `${currentActivity} | ${hrs}:${mins}:${secs}`;
+function createWindow() {
+    const win = new BrowserWindow({
+        width: 1200,
+        height: 800,
+        backgroundColor: "#0f1117",
 
-    }, 1000);
+        webPreferences: {
+            preload: path.join(__dirname, "preload.js"),
+            contextIsolation: true,
+            nodeIntegration: false
+        }
+    });
 
-});
+    win.loadFile("index.html");
+}
+
+app.whenReady().then(createWindow);

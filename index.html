@@ -1,45 +1,40 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mandom</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="container">
+<div class="bg"></div>
 
-        <h1>Mandom</h1>
+<div class="container">
 
-        <div class="card">
+    <h1 id="title">MANDOM</h1>
+    <p id="subtitle">Stand-based Activity Awareness System</p>
 
-            <input
-                type="text"
-                id="taskInput"
-                placeholder="What are you doing right now?"
-                autocomplete="off"
-            >
+    <div class="card">
 
-            <button id="startBtn">
-                Start
-            </button>
-
+        <div class="stand-box">
+            <h2 id="standName">Stand Dormant</h2>
         </div>
 
-        <div class="task-card">
-
-            <h3>Current Activity</h3>
-
-            <h2 id="currentTask">
-                No Activity Running
-            </h2>
-
+        <div class="status">
+            <h3 id="status">Waiting for host...</h3>
         </div>
 
     </div>
 
-    <script src="script.js"></script>
+    <div class="timeline-card">
+        <h3>Recent Timeline</h3>
+        <div id="timeline"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>

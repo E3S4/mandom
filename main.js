@@ -1,4 +1,4 @@
-const { BrowserWindow, app } = require("electron");
+const { app, BrowserWindow } = require("electron");
 const path = require("path");
 
 function createWindow() {
@@ -7,9 +7,10 @@ function createWindow() {
         height: 800,
         backgroundColor: "#0f1117",
         titleBarStyle: "hiddenInset",
-
         webPreferences: {
-            preload: path.join(__dirname, "preload.js")
+            preload: path.join(__dirname, "preload.js"),
+            nodeIntegration: true,
+            contextIsolation: false
         }
     });
 
@@ -17,9 +18,3 @@ function createWindow() {
 }
 
 app.whenReady().then(createWindow);
-
-app.on("window-all-closed", () => {
-    if (process.platform !== "darwin") {
-        app.quit();
-    }
-});
