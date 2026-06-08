@@ -1,31 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandom</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<div class="container">
 
-    <h1>Mandom</h1>
+    <div class="container">
 
-    <div class="card">
+        <h1>Mandom</h1>
 
-        <input
-            type="text"
-            id="taskInput"
-            placeholder="What are you doing?"
-        >
+        <div class="card">
 
-        <button id="startBtn">
-            Start Activity
-        </button>
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="What are you doing right now?"
+                autocomplete="off"
+            >
+
+            <button id="startBtn">
+                Start
+            </button>
+
+        </div>
+
+        <div class="task-card">
+
+            <h3>Current Activity</h3>
+
+            <h2 id="currentTask">
+                No Activity Running
+            </h2>
+
+        </div>
 
     </div>
 
-    <div class="task-card">
+    <script src="script.js"></script>
 
-        <h3>Current Activity</h3>
-
-        <h2 id="currentTask">
-            No Activity Running
-        </h2>
-
-    </div>
-
-</div>
 </body>
+</html>

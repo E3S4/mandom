@@ -1,76 +1,115 @@
 body{
     margin:0;
-    height:100vh;
+    min-height:100vh;
 
     display:flex;
     justify-content:center;
     align-items:center;
-
     background:#0f1117;
-
-    font-family:Segoe UI;
+    font-family:"Segoe UI", sans-serif;
 }
 
 .container{
-    width:700px;
+    width:min(700px,90%);
 }
 
 h1{
-    color:white;
+    margin-bottom:30px;
+    color:#ffffff;
     text-align:center;
     font-size:4rem;
+    font-weight:700;
+    letter-spacing:2px;
 }
 
 .card,
 .task-card{
-
     backdrop-filter:blur(20px);
-
     background:rgba(255,255,255,0.05);
-
-    border:1px solid rgba(255,255,255,0.1);
-
+    border:1px solid rgba(255,255,255,0.08);
     border-radius:20px;
-
     padding:20px;
-
     margin-top:20px;
+    box-shadow:
+        0 8px 32px rgba(0,0,0,0.25);
 }
-
+.card{
+    display:flex;
+    gap:12px;
+    align-items:center;
+}
 input{
-
-    width:70%;
-
+    flex:1;
     padding:15px;
-
-    border:none;
-
-    border-radius:10px;
-
+    background:#1a1d26;
+    color:white;
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:12px;
     font-size:1rem;
+    outline:none;
+    transition:0.2s;
 }
 
+input:focus{
+    border-color:#7c5cff;
+    box-shadow:
+        0 0 0 3px rgba(124,92,255,0.2);
+}
+input::placeholder{
+    color:rgba(255,255,255,0.5);
+}
 button{
-
     padding:15px 25px;
-
+    background:#7c5cff;
+    color:white;
     border:none;
-
-    border-radius:10px;
-
+    border-radius:12px;
     cursor:pointer;
+    font-weight:600;
+    transition:0.2s;
+}
 
-    font-weight:bold;
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:
+        0 8px 20px rgba(124,92,255,0.35);
+}
+button:active{
+    transform:translateY(0);
 }
 
 .task-card{
-
     text-align:center;
+}
+.task-card h3{
+    margin-top:0;
+    color:rgba(255,255,255,0.7);
+    font-weight:500;
+    letter-spacing:1px;
 }
 
 #currentTask{
-
     color:white;
-
     font-size:2rem;
+    font-weight:700;
+    word-break:break-word;
+}
+
+@media (max-width:600px){
+
+    .card{
+        flex-direction:column;
+    }
+
+    button{
+        width:100%;
+    }
+
+    h1{
+        font-size:3rem;
+    }
+
+    #currentTask{
+        font-size:1.5rem;
+    }
 }
