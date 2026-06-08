@@ -21,15 +21,12 @@ body{
     width:700px;
     height:700px;
     background:radial-gradient(circle, rgba(124,92,255,0.25), transparent 60%);
-    filter:blur(80px);
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
+    filter:blur(90px);
 }
 
-/* layout */
+/* container */
 .container{
-    width:min(750px,90%);
+    width:min(750px,92%);
     z-index:2;
 }
 
@@ -43,13 +40,13 @@ h1{
     -webkit-text-fill-color:transparent;
 }
 
-#subtitle{
+.subtitle{
     text-align:center;
     opacity:0.6;
     margin-bottom:20px;
 }
 
-/* main card */
+/* card */
 .card{
     padding:20px;
     border-radius:18px;
@@ -58,31 +55,22 @@ h1{
     border:1px solid rgba(255,255,255,0.08);
 
     backdrop-filter:blur(18px);
-}
-
-/* stand box */
-.stand-box{
     text-align:center;
-    padding:15px;
 }
 
-#standName{
+/* stand */
+.stand h2{
     font-size:1.8rem;
 }
 
 /* status */
 .status{
-    text-align:center;
     margin-top:10px;
-}
-
-#status{
-    font-size:1.2rem;
     opacity:0.8;
 }
 
 /* timeline */
-.timeline-card{
+.timeline{
     margin-top:20px;
     padding:20px;
 
@@ -93,7 +81,7 @@ h1{
     backdrop-filter:blur(18px);
 }
 
-.timeline-card h3{
+.timeline h3{
     opacity:0.6;
     margin-bottom:10px;
 }
