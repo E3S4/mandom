@@ -1,26 +1,38 @@
-# mandom
+# Mandom
 
-> Time should be remembered, not merely counted.
+> *"Time should be remembered, not merely counted."*
 
-![GitHub stars](https://img.shields.io/github/stars/E3S4/mandom?style=for-the-badge&logo=github) ![GitHub forks](https://img.shields.io/github/forks/E3S4/mandom?style=for-the-badge&logo=github) ![GitHub issues](https://img.shields.io/github/issues/E3S4/mandom?style=for-the-badge&logo=github) ![Last commit](https://img.shields.io/github/last-commit/E3S4/mandom?style=for-the-badge&logo=github) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white) ![License](https://img.shields.io/badge/License-GPLv3-blue?style=for-the-badge)
+Mandom is a minimalist desktop time tracker focused on awareness rather than productivity obsession.
 
-##  Description
+Most productivity apps try to optimize every second of your day with streaks, points, achievements, and endless notifications. Mandom takes a different approach. It quietly records your activities, helping you build a timeline of how your time was actually spent.
 
-Mandom is a lightweight desktop activity tracker designed to help users understand exactly where their time goes. Instead of gamifying productivity or pushing for constant optimization, it acts as an unobtrusive companion that logs daily sessions, tasks, and hours. By focusing on awareness, the application allows users to treat their productivity as a continuous timeline that can be reviewed and reflected upon later.
+Whether you're studying, coding, drawing, writing, or simply trying to understand your habits, Mandom acts as a personal record of your day — a way to look back and see where your time went.
 
-##  Key Features
+All data stays on your machine. No accounts. No subscriptions. No cloud sync. Just your time, preserved.
 
-- **Activity-Based Session Timer** — Start and stop sessions manually to track and record specific intervals of work or tasks throughout the day.
-- **Chronological Timeline Reconstruction** — Visualize your logged activities sequentially as traces of time in a minimalist timeline view.
-- **Daily and Weekly Statistics** — Review visual summaries and insights of your logged activities to observe long-term trends.
-- **Local Data Storage** — Keep all your tracking history completely private by storing session records locally on your machine.
-- **Lightweight Electron Desktop Experience** — Runs as a dedicated desktop application built with a clean HTML, CSS, and JavaScript interface.
+## Features
 
-##  Use Cases
+*  Activity-based session tracking
+*  Chronological timeline view
+*  Daily and weekly statistics
+*  Local-first and privacy-friendly
+*  Lightweight Electron desktop application
+*  Distraction-free interface
 
-- Users seeking a private, local-first alternative to cloud-based time trackers to analyze their daily workflow.
-- Developers looking for a lightweight desktop timer to log session durations and tasks directly from their desktop.
-- Individuals wanting a visual daily timeline to reflect on their habits without gamified distraction or optimization metrics.
+## Why Mandom?
+
+Time trackers often focus on maximizing output.
+
+Mandom focuses on understanding.
+
+Instead of asking:
+
+*"How can I be more productive?"*
+
+Mandom asks:
+
+*"Where did my time actually go?"*
+
 
 ##  Tech Stack
 
